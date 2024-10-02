@@ -1,0 +1,71 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30vw;
+    height: 30vw;
+    border: 6px solid black;
+    border-radius: 50%;
+    padding: 40px;
+    background-color: #ffddc1; /* Ajout d'une couleur de fond */
+}
+
+.eyes {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eyes span {
+    width: 10vw;
+    height: 10vw;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: white; /* Pour accentuer les yeux */
+    overflow: hidden;
+}
+
+.eyes span > div {
+    width: 4vw;
+    height: 4vw;
+    background-color: black;
+    border-radius: 50%;
+    animation: aln 2s infinite  ease-in-out;
+}
+
+.mouth {
+    width: 20vw;
+    height: 3vh;
+    background-color:black;
+    border-radius: 0% 0% 100% 100%;
+}
+
+@keyframes aln {
+    0% {
+        transform: translateY(0%);
+    }
+    25%{
+        transform: translateX(100%) translateY(-100%);
+    }
+    50%{
+        transform: translateX(-100%) translateY(-100%);
+    }
+  
+    
+}
